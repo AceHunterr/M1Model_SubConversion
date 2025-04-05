@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2.3.xsd"
+    id = "NeuroML2_file_exported_from_NEURON">
+
+  <notes> NeuroML 2 file generated from ModelView by: NEURON -- VERSION 8.2.6 HEAD (078a34a9d) 2024-07-24
+          Authors: Michael Hines, Sushil Kambampati and Padraig Gleeson,
+          Yale University and UCL 
+  </notes>
+
+  <cell id="LTScell_0_0">
+    <notes>Cell: LTScell_0_0 exported from NEURON ModelView</notes>
+    <morphology id="morphology">
+<!-- Section: LTScell[0].soma (segmentGroup: soma) which has 0 3D points, so -1 segment(s)-->
+<!-- Section: LTScell[0].dend (segmentGroup: dend) which has 0 3D points, so -1 segment(s)-->
+<!-- Section: LTScell[0].axon (segmentGroup: axon) which has 0 3D points, so -1 segment(s)-->
+
+<!-- Section: LTScell[0].soma (segmentGroup: soma) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "soma"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+
+<!-- Section: LTScell[0].dend (segmentGroup: dend) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "dend"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+
+<!-- Section: LTScell[0].axon (segmentGroup: axon) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "axon"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+      <segmentGroup id="all"> <!-- Replacing subset name ModelViewParmSubset_0 with all, as it contains all sections -->
+        <include segmentGroup = "soma"/>
+        <include segmentGroup = "dend"/>
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_1"> 
+        <include segmentGroup = "soma"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_2"> 
+        <include segmentGroup = "soma"/>
+        <include segmentGroup = "dend"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_3"> 
+        <include segmentGroup = "dend"/>
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_3"> <!-- Creating a group containing a single section: axon... -->
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_2"> <!-- Creating a group containing a single section: dend... -->
+        <include segmentGroup = "dend"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_1"> <!-- Creating a group containing a single section: soma... -->
+        <include segmentGroup = "soma"/>
+      </segmentGroup>
+
+    </morphology>
+
+    <!-- Biophysical properties -->
+
+    <biophysicalProperties id="biophys"> 
+
+      <membraneProperties> 
+
+        <channelDensity ionChannel="pas" id="pas_XXX"  condDensity = "0.025 mS_per_cm2" erev="-54.035525mV" />
+
+        <channelDensity ionChannel="catcb" id="catcb_XXX"  condDensity = "3 mS_per_cm2" segmentGroup="OneSecGrp_SectionRef_1" 

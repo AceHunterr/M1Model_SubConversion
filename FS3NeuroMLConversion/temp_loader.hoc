@@ -1,0 +1,6 @@
+
+    load_file("stdrun.hoc")
+    xopen("./cells/LTS3.hoc")
+    objref cell
+    cell = new LTScell()  
+    

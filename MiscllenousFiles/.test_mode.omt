@@ -1,0 +1,23 @@
+target: ./cells/PTcell.hoc  
+engine: NEURON  # Use NEURON as the simulation engine
+
+experiments:
+  soma_voltage_test:
+    observables:
+      membrane_potential:
+        file:
+          path: voltage.dat  
+          columns: [0,1]  
+          scaling: [1, 1]  
+        tolerance: 0.005  
+
+  action_potential:
+    observables:
+      spike_times:
+        file:
+          path: spikes.dat  
+          columns: [0]
+        spike detection:
+          method: threshold
+          threshold: -10.0  
+        tolerance: 0.01

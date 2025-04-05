@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2.3.xsd"
+    id = "NeuroML2_file_exported_from_NEURON">
+
+  <notes> NeuroML 2 file generated from ModelView by: NEURON -- VERSION 8.2.6 HEAD (078a34a9d) 2024-07-24
+          Authors: Michael Hines, Sushil Kambampati and Padraig Gleeson,
+          Yale University and UCL 
+  </notes>
+
+  <cell id="FScell_0_0">
+    <notes>Cell: FScell_0_0 exported from NEURON ModelView</notes>
+    <morphology id="morphology">
+<!-- Section: FScell[0].soma (segmentGroup: soma) which has 0 3D points, so -1 segment(s)-->
+<!-- Section: FScell[0].dend (segmentGroup: dend) which has 0 3D points, so -1 segment(s)-->
+<!-- Section: FScell[0].axon (segmentGroup: axon) which has 0 3D points, so -1 segment(s)-->
+
+<!-- Section: FScell[0].soma (segmentGroup: soma) which has 0 3D points, so -1 segment(s)-->
+
+      <!-- Segments -->
+      <segment id="0" name="soma">
+          <proximal x="0" y="0" z="0" diameter="29"/>
+          <distal x="27" y="0" z="0" diameter="29"/>
+      </segment>
+      <segment id="1" name="dend"  >
+          <parent segment="0"/>
+          <proximal x="0" y="0" z="0" diameter="7"/>
+          <distal x="44" y="0" z="0" diameter="7"/>
+      </segment>
+      <segment id="2" name="axon"  >
+          <parent segment="0"/>
+          <proximal x="0" y="0" z="0" diameter="1.5"/>
+          <distal x="115" y="0" z="0" diameter="1.5"/>
+      </segment>
+
+      <segmentGroup id = "soma"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+
+<!-- Section: FScell[0].dend (segmentGroup: dend) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "dend"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+
+<!-- Section: FScell[0].axon (segmentGroup: axon) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "axon"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+      <segmentGroup id="all"> <!-- Replacing subset name ModelViewParmSubset_0 with all, as it contains all sections -->
+        <include segmentGroup = "soma"/>
+        <include segmentGroup = "dend"/>
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_1"> 
+        <include segmentGroup = "soma"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_2"> 
+        <include segmentGroup = "soma"/>
+        <include segmentGroup = "dend"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_3"> 
+        <include segmentGroup = "dend"/>
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_3"> <!-- Creating a group containing a single section: axon... -->
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_1"> <!-- Creating a group containing a single section: soma... -->
+        <include segmentGroup = "soma"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_2"> <!-- Creating a group containing a single section: dend... -->
+        <include segmentGroup = "dend"/>
+      </segmentGroup>
+
+    </morphology>
+  </cell> 
+  <cell id="FScell_0_1">
+    <notes>Cell: FScell_0_1 exported from NEURON ModelView</notes>
+    <morphology id="morphology">
+<!-- Section: FScell[1].soma (segmentGroup: soma) which has 0 3D points, so -1 segment(s)-->
+<!-- Section: FScell[1].dend (segmentGroup: dend) which has 0 3D points, so -1 segment(s)-->
+<!-- Section: FScell[1].axon (segmentGroup: axon) which has 0 3D points, so -1 segment(s)-->
+
+<!-- Section: FScell[1].soma (segmentGroup: soma) which has 0 3D points, so -1 segment(s)-->
+
+
+      <!-- Segments -->
+      <segment id="0" name="soma">
+          <proximal x="0" y="0" z="0" diameter="29"/>
+          <distal x="27" y="0" z="0" diameter="29"/>
+      </segment>
+      <segment id="1" name="dend"  >
+            <parent segment="0"/>
+          <proximal x="0" y="0" z="0" diameter="7"/>
+          <distal x="44" y="0" z="0" diameter="7"/>
+      </segment>
+      <segment id="2" name="axon"  >
+          <parent segment="0"/>
+          <proximal x="0" y="0" z="0" diameter="1.5"/>
+          <distal x="115" y="0" z="0" diameter="1.5"/>
+      </segment>
+      
+      <segmentGroup id = "soma"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+
+<!-- Section: FScell[1].dend (segmentGroup: dend) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "dend"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+
+<!-- Section: FScell[1].axon (segmentGroup: axon) which has 0 3D points, so -1 segment(s)-->
+
+      <segmentGroup id = "axon"  neuroLexId="sao864921383">
+         <notes>This group contains an unbranched set of segments, and all of the segmentGroups marked with
+             neuroLexId = sao864921383 form a non-overlapping set of all of the segments.
+             These segmentGroups correspond to the 'cables' of NeuroML v1.8.1, and map to/from NEURON sections.</notes>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_18"> 
+        <include segmentGroup = "soma"/>
+        <include segmentGroup = "dend"/>
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_19"> 
+        <include segmentGroup = "soma"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_20"> 
+        <include segmentGroup = "soma"/>
+        <include segmentGroup = "dend"/>
+      </segmentGroup>
+
+      <segmentGroup id="ModelViewParmSubset_21"> 
+        <include segmentGroup = "dend"/>
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_7"> <!-- Creating a group containing a single section: soma... -->
+        <include segmentGroup = "soma"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_9"> <!-- Creating a group containing a single section: axon... -->
+        <include segmentGroup = "axon"/>
+      </segmentGroup>
+
+      <segmentGroup id="OneSecGrp_SectionRef_8"> <!-- Creating a group containing a single section: dend... -->
+        <include segmentGroup = "dend"/>
+      </segmentGroup>
+
+    </morphology>
+  </cell> 
+
+  <network id="network" type="networkWithTemperature" temperature="23 degC">
+    <population id="Pop_FScell_0_0" component="FScell_0_0" size="1" type="populationList">
+        <instance id="0">
+            <location x="0" y="0" z="0"/>
+        </instance>
+    </population>
+    <population id="Pop_FScell_0_1" component="FScell_0_1" size="1" type="populationList">
+        <instance id="0">
+            <location x="0" y="0" z="0"/>
+        </instance>
+    </population>
+  </network>
+ 
+</neuroml>
