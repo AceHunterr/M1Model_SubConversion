@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta4.xsd" 
+         id="${id}">
+
+    <notes>NeuroML file automatically generated from an NMODL file</notes>
+
+    <ionChannel id="${id}" conductance="10pS" type="${type}" species="${species}">
+        
+        #if($notes)
+        <notes>${notes}</notes>
+        #end
+
+    #if($ion)
+    <current_voltage_relation cond_law="ohmic" ion="${ion}" default_erev="${initConc}" default_gmax="${gmax}"> 
+    #end
+
+#foreach ($gate in $gates)##
+
+            <gate id="${gate.id}" instances="${gate.instances}">
+
+                <closed_state id="${gate.closed}"/>
+                <open_state id="${gate.open}"/>
+                
+                #if($gate.frate)
+                <transition name="alpha" from="${gate.closed}" to="${gate.open}" expr_form="${gate.fexpr_form}" rate="${gate.frate}" scale="${gate.fscale}" midpoint="${gate.fmp}" />
+                #end
+
+                #if($gate.forwardEquation)
+                <transition name="alpha" from="${gate.closed}" to="${gate.open}" expr="${gate.forwardEquation}" expr_form="generic" />
+                #end
+
+                #if($gate.brate)
+                <transition name="beta" from="${gate.closed}" to="${gate.open}" expr_form="${gate.bexpr_form}" rate="${gate.brate}" scale="${gate.bscale}" midpoint="${gate.bmp}" />
+                #end
+                
+                #if($gate.backwardEquation)
+                <transition name="beta" from="${gate.closed}" to="${gate.open}" expr="${gate.backwardEquation}" expr_form="generic" />
+                #end
+
+            </gate>
+
+#end##   
+
+    #if($ion)
+    <current_voltage_relation> 
+    #end
+        
+    </ionChannel>
+    
+</neuroml>
